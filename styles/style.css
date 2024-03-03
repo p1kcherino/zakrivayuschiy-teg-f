@@ -29,21 +29,19 @@
 
 .header {
  border: 2px solid var(--accent-color);
- margin-block-start: 100px;
- margin-block-end: 100px;
- margin-inline: auto;
  max-width: 700px;
- padding-block-start: 136px;
- padding-block-end: 20px;
+ margin: 100px 0;
+ padding: 136px 0 23px;
+ margin-inline: auto;
  background-color: var(--background-color);
  text-align: center;
- font-family: var(--accent-font), fantasy, sans-serif;
+ font-family: var(--accent-font), sans-serif;
 }
 
 .header__title {
  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+ padding-block-end: 21px;
  display: block;
- padding-block-end: 18px;
  text-decoration: none;
 }
 
@@ -147,13 +145,14 @@
 .img__container {
  overflow: hidden;
  position: relative;
- max-height: 700px;
 }
 
 .card__img {
- width: 100%;
- height: 100%;
- object-fit: cover;
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
 }
 
 .filter_brightness {
@@ -318,10 +317,10 @@
 
 .dialog__button {
  gap: 8px;
+ width: 335px;
  margin-block-start: 54px;
  margin-block-end: 100px;
  margin-inline: auto;
- width: 335px;
  padding-block: 15px;
 }
 
@@ -392,21 +391,26 @@
    width: 100vw;
  }
 
+ .card {
+  max-height: 760px;
+ }
+
  .card_title {
    display: block;
    max-width: 316px;
  }
 
  .img__container {
-   height: 696px;
-   width: 696px;
+   max-height: 375px;
+   max-width: 375px;
    position: relative;
    overflow: hidden;
  }
 
  .card__img {
-   width: 100%;
-   height: auto;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
  }
 
  .dialog__button {
