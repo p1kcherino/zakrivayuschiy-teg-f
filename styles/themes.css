@@ -4,47 +4,54 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-
 :root.theme-dark {
- --background-color: #000;
- --accent-color: #00CC14;
- --font-weight-card-title: 785;
- --font-weight-card-text: 465;
- --buttom-like-text-color: #00CC14;
- --heart-contour-color: #00CC14;
- --heart-filling-color: red;
- --heart-body-color: #00CC14;
- --background-image: repeating-linear-gradient(#000,#000 2px, transparent 2px, transparent 4px), 
- repeating-linear-gradient(90deg,#000,#000 2px, transparent 2px, transparent 4px),
- linear-gradient(#007f0c, #004306);
+  --accent-color: rgba(0, 204, 20, 1);
+  --second-color: rgba(0, 0, 0, 1);
+  --bg-color: rgba(0, 0, 0, 1);
+  --accent-font: "Inter-Variable", sans-serif;
+  --second-font: "PressStart2P", sans-serif;
+  --bg-gradient: repeating-linear-gradient(
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#007f0c, #004306);
+  --second-wght: 785;
+  --main-wght: 465;
+  --btm-color-text: rgb(0, 204, 20, 1);
+  --heart-color: rgba(255, 0, 0, 1);
 }
 
 :root.theme-light {
- --background-color: #FFF;
- --accent-color: #000;
- --font-weight-card-title: 700;
- --font-weight-card-text: 400;
- --buttom-like-text-color: #FFF;
- --heart-contour-color: #000;
- --heart-filling-color: red;
- --heart-body-color: #000;
- --background-image: repeating-linear-gradient(#d3d3d3,#d3d3d3 2px, transparent 2px, transparent 4px), 
- repeating-linear-gradient(90deg,#d3d3d3,#d3d3d3 2px, transparent 2px, transparent 4px),
- linear-gradient(#e7e7e7, #1a1a1a);
-}
-
-@media (prefers-color-scheme: dark) {
- :root {
-     --background-color: #000;
-     --accent-color: #00CC14;
-     --font-weight-card-title: 785;
-     --font-weight-card-text: 465;
-     --buttom-like-text-color: #00CC14;
-     --heart-contour-color: #00CC14;
-     --heart-filling-color: red;
-     --heart-body-color: #00CC14;
-     --background-image: repeating-linear-gradient(#000,#000 2px, transparent 2px, transparent 4px), 
-     repeating-linear-gradient(90deg,#000,#000 2px, transparent 2px, transparent 4px),
-     linear-gradient(#007f0c, #004306);
- }
+  --accent-color: rgba(0, 0, 0, 1);
+  --second-color: rgba(255, 255, 255, 1);
+  --bg-color: rgba(255, 255, 255, 1);
+  --accent-font: "Inter-Variable", sans-serif;
+  --second-font: "PressStart2P", sans-serif;
+  --bg-gradient: repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
+  --second-wght: 700;
+  --main-wght: 400;
+  --btm-color-text: rgb(255, 255, 255, 1);
+  --heart-color: rgba(255, 0, 0, 1);
 }
