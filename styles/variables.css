@@ -1,27 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
 :root {
-  --main-font: "Inter-Variable";
-  --accent-font: "PressStart2P";
-  --font-weight-accent: 700;
-  --font-weight-card-text: 400;
-  --background-color: #fff;
-  --accent-color: #000;
-  --buttom-like-text-color: #fff;
-  --heart-contour-color: #000;
-  --heart-filling-color: red;
-  --heart-body-color: #000;
-  --background-image: repeating-linear-gradient(
-      #d3d3d3,
-      #d3d3d3 2px,
+  --accent-color: rgba(0, 204, 20, 1);
+  --second-color: rgba(0, 0, 0, 1);
+  --bg-color: rgba(0, 0, 0, 1);
+  --accent-font: "Inter-Variable", sans-serif;
+  --second-font: "PressStart2P", sans-serif;
+  --bg-gradient: repeating-linear-gradient(
+      #000,
+      #000 2px,
       transparent 2px,
       transparent 4px
     ),
     repeating-linear-gradient(
       90deg,
-      #d3d3d3,
-      #d3d3d3 2px,
+      #000,
+      #000 2px,
       transparent 2px,
       transparent 4px
     ),
-    linear-gradient(#e7e7e7, #1a1a1a);
+    linear-gradient(#007f0c, #004306);
+    --second-wght: 785;
+    --main-wght: 465;
+    --btm-color-text: rgb(0, 204, 20, 1);
+    --heart-color: rgba(255, 0, 0, 1);
 }
