@@ -316,6 +316,7 @@
   font-family: var(--second-font);
   text-align: left;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .floppy-icon-dialog {
