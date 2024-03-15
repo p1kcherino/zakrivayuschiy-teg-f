@@ -123,7 +123,7 @@
   flex-direction: column;
   margin-inline: auto;
   max-width: 700px;
-  gap: 51px;
+  gap: 50px;
 }
 
 .card {
