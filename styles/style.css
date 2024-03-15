@@ -73,8 +73,13 @@
   display: block;
   background-color: var(--accent-color);
   opacity: 0.6;
+<<<<<<< HEAD
   top: 2px;
   left: 2px;
+=======
+  top: 17px;
+  left: 0;
+>>>>>>> d2d695f7a719fc2ecdc8b8016a55f88b2963a531
   width: 0;
   height: 2px;
   transition: width 0.5s ease-in;
@@ -99,9 +104,15 @@
   width: 14px;
   height: 14px;
   position: absolute;
+<<<<<<< HEAD
   animation: animated-arrow 0.5s infinite ease-in alternate;
   top: 2px;
   left: 2px;
+=======
+  animation: animated-arrow 2s infinite ease-in alternate;
+  top: 0;
+  left: 0;
+>>>>>>> d2d695f7a719fc2ecdc8b8016a55f88b2963a531
 }
 
 .theme-menu__button:hover {
@@ -260,7 +271,7 @@
 
 .card__icon-button:focus,
 .dialog__save-button:focus {
-  outline: none;
+  border: none;
 }
 
 .card__icon-button:focus-visible {
