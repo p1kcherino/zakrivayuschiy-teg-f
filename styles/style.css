@@ -73,10 +73,11 @@
   display: block;
   background-color: var(--accent-color);
   opacity: 0.6;
-  top: 17px;
+  top: 2px;
+  left: 2px;
   width: 0;
   height: 2px;
-  transition: width 0.3s ease-in;
+  transition: width 0.5s ease-in;
 }
 
 .theme-menu__button:focus-visible:after {
@@ -89,7 +90,7 @@
   font-size: 14px;
   text-transform: uppercase;
   background: transparent;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.5s ease;
   cursor: pointer;
 }
 
@@ -98,7 +99,9 @@
   width: 14px;
   height: 14px;
   position: absolute;
-  animation: animated-arrow 2s infinite ease-in alternate;
+  animation: animated-arrow 0.5s infinite ease-in alternate;
+  top: 2px;
+  left: 2px;
 }
 
 .theme-menu__button:hover {
@@ -120,6 +123,7 @@
   flex-direction: column;
   margin-inline: auto;
   max-width: 700px;
+  gap: 51px;
 }
 
 .card {
@@ -128,7 +132,6 @@
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   text-align: left;
-  margin-block-end: 49px;
 }
 
 .libel {
@@ -171,7 +174,7 @@
   flex-direction: column;
   gap: 26px;
   padding-inline: 25px;
-  padding-block-start: 23px;
+  padding-block-start: 25px;
   padding-block-end: 25px;
   line-height: 21px;
   border-top: 2px solid var(--accent-color);
@@ -184,9 +187,10 @@
 
 .card__button-box {
   display: flex;
+  align-items: center;
   justify-content: end;
   padding-inline-end: 25px;
-  padding-block-end: 23px;
+  padding-block-end: 25px;
 }
 
 .button {
@@ -205,7 +209,8 @@
 
 .button:before,
 .button-save:before,
-.dialog__save-button:before {
+.dialog__save-button:before
+ {
   content: "";
   position: absolute;
   top: 0;
@@ -222,11 +227,13 @@
   width: 100%;
 }
 
-.button:focus {
+.button:focus, 
+.dialog:focus {
   outline: none;
 }
 
-.button:focus-visible {
+.button:focus-visible, 
+.dialog__save-button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
@@ -245,16 +252,19 @@
   border: none;
 }
 
+.card__icon-button {
+ height: 35px;
+ padding: 0;
+ margin-inline-end: 5px;
+}
+
 .card__icon-button:focus,
 .dialog__save-button:focus {
   outline: none;
 }
 
 .card__icon-button:focus-visible {
-  position: relative;
-  border: 2px solid var(--accent-color);
-  margin-right: 6px;
-  height: 39px;
+ outline: 2px solid var(--accent-color);
 }
 
 .button-save {
@@ -360,8 +370,8 @@
 @media (width < 376px) {
   .button-save {
     flex-direction: column;
-    min-width: 306px;
-    min-height: 84px;
+    width: 306px;
+    height: 84px;
   }
 
   .header {
@@ -375,6 +385,8 @@
     padding-inline: 42px;
   }
   .dialog__save-button {
-    min-width: 257px;
+    min-width: 306px;
   }
 }
+
+

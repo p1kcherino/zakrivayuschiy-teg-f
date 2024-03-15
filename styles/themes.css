@@ -8,8 +8,6 @@
   --accent-color: rgba(0, 204, 20, 1);
   --second-color: rgba(0, 0, 0, 1);
   --bg-color: rgba(0, 0, 0, 1);
-  --accent-font: "Inter-Variable", sans-serif;
-  --second-font: "PressStart2P", sans-serif;
   --bg-gradient: repeating-linear-gradient(
       #000,
       #000 2px,
@@ -34,8 +32,6 @@
   --accent-color: rgba(0, 0, 0, 1);
   --second-color: rgba(255, 255, 255, 1);
   --bg-color: rgba(255, 255, 255, 1);
-  --accent-font: "Inter-Variable", sans-serif;
-  --second-font: "PressStart2P", sans-serif;
   --bg-gradient: repeating-linear-gradient(
       #d3d3d3,
       #d3d3d3 2px,
