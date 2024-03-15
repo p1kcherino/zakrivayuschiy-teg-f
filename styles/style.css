@@ -327,7 +327,7 @@
 
 .dialog__save-button {
   position: relative;
-  min-width: 293px;
+  width: 293px;
   height: 38px;
   margin-block-start: 30px;
   border: 2px solid var(--accent-color);
