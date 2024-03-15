@@ -258,9 +258,11 @@
  margin-inline-end: 5px;
 }
 
-.card__icon-button:focus,
+.card__icon-button:focus {
+  border: none;
+}
 .dialog__save-button:focus {
-  outline: none;
+ outline: none;
 }
 
 .card__icon-button:focus-visible {
