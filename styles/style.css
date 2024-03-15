@@ -372,6 +372,7 @@
 @media (width < 376px) {
   .button-save {
     flex-direction: column;
+    min-width: 306px;
     height: 84px;
   }
 
