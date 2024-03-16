@@ -73,15 +73,15 @@
   display: block;
   background-color: var(--accent-color);
   opacity: 0.6;
-  top: 2px;
-  left: 2px;
+  top: 17px;
+  left: 4px;
   width: 0;
   height: 2px;
-  transition: width 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.theme-menu__button:focus-visible:after {
-  width: 85%;
+.theme-menu__button:focus-visible::after {
+  width: 90%;
 }
 
 .theme-menu__button {
